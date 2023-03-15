@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background-color: black;
+      font-family: system-ui;
+
+    }
+
+    nav {
+      display: -webkit-flex;
+      display: flex;
+      padding: 2% 6%;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links {
+      flex: 1;
+      text-align: center;
+    }
+
+    .nav-links ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 8px 12px;
+      position: relative;
+    }
+
+    .nav-links ul li a {
+      color: white;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .nav-links ul li::after {
+      content: '';
+      width: 0%;
+      height: 3px;
+      background: lightgray;
+      -webkit-display: block;
+      display: block;
+      margin: auto;
+      transition: 0.5s;
+    }
+
+    .nav-links ul li:hover::after {
+      width: 100%;
+    }
+
+    .table-row th,
+    .table-row td {
+      background-color: mediumpurple;
+      border: 2px solid rgb(5, 42, 42);
+      color: white;
+      padding: 10px;
+    }
+
+    .table-text {
+      font-family: system-ui;
+      width: 100%;
+      margin-top: 0 auto;
+    }
+  </style>
+  <title>www.Nitish_Gannu_Spring23_WebDev2_Prof.Monaghan.com</title>
+</head>
+
+<body>
+  <header>
+    <div class="nav-links" id="navLinks">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="tally.html">TALLY</a></li>
+        <li><a href="rubric.html">RUBRIC</a></li>
+        <li><a href="implementation.html">IMPLEMENTATION</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="rubric-table">
+      <div class="table-text">
+        <div>
+          <table class="rubric-table">
+            <tr class="table-row">
+              <th></th>
+              <th>Low</th>
+              <th>Emerging</th>
+              <th>Improving</th>
+              <th>High</th>
+            </tr>
+            <tr class="table-row">
+              <th></th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+            </tr>
+            <tr class="table-row">
+              <th>Accuracy </th>
+              <td>Misinformation </td>
+              <td>Many inaccurate facts/figures on site </td>
+              <td>Some inaccurate facts/figures on site; some inconsistencies present </td>
+              <td></td>
+            </tr>
+            <tr class="table-row">
+              <th>Grammatical Presentation and Punctuality </th>
+              <td>No punctuation/Many Grammar Mistake </td>
+              <td>Several grammar mistakes present. Punctuation errors present. </td>
+              <td>Some grammatical errors present. Some punctuation errors present. </td>
+              <td>Punctuation and grammar is correct. </td>
+            </tr>
+            <tr class="table-row">
+              <th>Readability </th>
+              <td>Confusing layout. Cant fid the information </td>
+              <td></td>
+              <td></td>
+              <td>Logical display, easy to locate information. Clear. Concise, language appropriate. Succinct. </td>
+            </tr>
+            <tr class="table-row">
+              <th>Font</th>
+              <td>Predictable font used. No variation. Font not appropriate hard to read. </td>
+              <td></td>
+              <td></td>
+              <td>Logical display, easy to locate information. Clear. Concise, language appropriate. Succinct. </td>
+            </tr>
+            <tr class="table-row">
+              <th>Ownership</th>
+              <td>No obvious citation/URL dubious </td>
+              <td></td>
+              <td></td>
+              <td>Citations correct; </td>
+            </tr>
+            <tr class="table-row">
+              <th>Animation</th>
+              <td>No Animation</td>
+              <td>Not smooth. Glaring </td>
+              <td></td>
+              <td>Smooth </td>
+            </tr>
+            <tr class="table-row">
+              <th>Artistry </th>
+              <td>Plain. No artistry present. </td>
+              <td></td>
+              <td></td>
+              <td>Use of original artwork/public. </td>
+            </tr>
+            <tr class="table-row">
+              <th>colors</th>
+              <td>No color palette used </td>
+              <td>Some color palettes used/Gradients. Used but not smooth. </td>
+              <td></td>
+              <td>Gradient and color palette used </td>
+            </tr>
+
+            <tr class="table-row">
+              <th>Relevancy </th>
+              <td>relevant information</td>
+              <td>Most information displayed is not relevant </td>
+              <td>Some irrelevant information </td>
+              <td>Very relevant information </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
