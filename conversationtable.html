@@ -8,13 +8,54 @@
   <link href="CSS/tablelayout.css" rel="stylesheet" />
   <style>
     html {
-      background-color: mediumorchid;
+      background-color:mediumpurple;
       background-size: cover;
       display: block;
       margin: auto;
       width: 100%;
     }
 
+    nav {
+      display: -webkit-flex;
+      display: flex;
+      padding: 2% 6%;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links {
+      flex: 1;
+      text-align: center;
+    }
+
+    .nav-links ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 8px 12px;
+      position: relative;
+    }
+
+    .nav-links ul li a {
+      color: white;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .nav-links ul li::after {
+      content: '';
+      width: 0%;
+      height: 3px;
+      background: lightgray;
+      -webkit-display: block;
+      display: block;
+      margin: auto;
+      transition: 0.5s;
+    }
+
+    .nav-links ul li:hover::after {
+      width: 100%;
+    }
 
 
     table {
@@ -92,8 +133,19 @@
 
 <body>
 
+  <div class="nav-links" id="navLinks">
+      <ul>
+             <li><a class="nav-link active" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="conversationtable.html">Conversation Table</a></li>
+          <li><a class="nav-link" href="https://forms.gle/fvSSvxBx7Wq3pY5u5">Implementation Sheet</a></li>
+          <li><a class="nav-link" href="websiterubric.html">Website Rubric</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  
   <div class="container">
     <header>
+
       <a class="logo" href="#home">
 
       </a>
